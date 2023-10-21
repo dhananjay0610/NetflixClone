@@ -17,3 +17,32 @@
         -moview suggestions
 
         
+
+
+
+
+
+        Bug Fix : display name and profile picture
+        if user is not logged in rediret /browse to /login and vice versa
+
+
+<!--    Header
+        Routing of app
+        login form
+        sign up form
+        form validation
+        userref Hook
+        firebase setup
+        deploying our app to production
+        create signup user account
+        implement sign in user api
+        created redux store with useSlice
+        implemented sign out
+        update profile
+        BugFix: sign up user displayname and profile picture update
+        BugFix: if user is not logged in then redirect /browse to login page and vice versa
+        Unsubscribed to the onauthstatechanged callback 
+        added hardcoded values to constant file
+        Register for TMDB api , create app there and get access token
+        get data from tmdb nowPlaying movies List api
+         -->
