@@ -53,5 +53,14 @@
         update store with trailer video data
         embedded the youtube video and make it autoplay and mute
         added tailwind classed to make MaiContainer to look awesome
+        Build Secondary Container
+        Built Movie List
+        Build Movie Card
+        TMDB image CDN url
+        made the Browse page looks better
+        useTopRatedMovies custom hook
+
+        GPT Search Feature
+        
         
          -->

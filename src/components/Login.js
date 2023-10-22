@@ -11,6 +11,7 @@ import { auth } from "../utils/firebase";
 //import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG_IMG } from "../utils/constants";
 const Login = () => {
   const [isSignInform, setIsSignInForm] = useState(true);
   const toggleSignInForm = () => {
@@ -57,7 +58,7 @@ const Login = () => {
                 addUser({ uid: uid, email: email, displayName: displayName })
               );
 
-    //          navigate("/browse");
+              //          navigate("/browse");
             })
             .catch((error) => {
               console.log("can't update user profile");
@@ -81,7 +82,7 @@ const Login = () => {
         .then((userCredential) => {
           const user = userCredential.user;
           console.log("Sign in " + user);
-      //    navigate("/browse");
+          //    navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -95,11 +96,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          className="w-[100%] h-auto"
-          alt="logo"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-        />
+        <img className="w-[100%] h-auto" alt="logo" src={BG_IMG} />
       </div>
 
       <form
