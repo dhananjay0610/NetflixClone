@@ -1,3 +1,5 @@
+Netflix Clone with OpenAI API Integration
+Welcome to our Netflix clone project! This application replicates the popular streaming service Netflix and incorporates the power of OpenAI API to enhance user experience.
 
 #Feature
     -Login/Signup form
