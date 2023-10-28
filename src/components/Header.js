@@ -42,7 +42,9 @@ const Header = () => {
     dispatch(toggleGptSearchView());
   };
 
-  return (
+const showGPTSearch = useSelector((store) => store.gpt.showGptSearch);
+
+return (
     <div
       className="flex justify-between
      w-screen absolute px-8 py-2 bg-gradient-to-b from-black z-10"
@@ -54,7 +56,7 @@ const Header = () => {
             className="px-4 p-4 m-4 bg-purple-500 rounded-lg text-white"
             onClick={handleGPTSearch}
           >
-            GPT Search
+           { showGPTSearch ? "Home Page" : "GPT Search"}
           </button>
           <img className="h-12 w-12 " alt="userIcon" src={USER_AVATAR} />
           <button className="font-bold text-white px-2" onClick={handleSignOut}>
