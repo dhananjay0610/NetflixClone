@@ -16,16 +16,9 @@ Welcome to our Netflix clone project! This application replicates the popular st
 
     -GPT
         -search bar
-        -moview suggestions
-
-        
-
-
-
-
-
-        Bug Fix : display name and profile picture
-        if user is not logged in rediret /browse to /login and vice versa
+        -moview suggestion
+        -Bug Fix : display name and profile picture
+        -if user is not logged in rediret /browse to /login and vice versa
 
 
 <!--    Header

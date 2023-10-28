@@ -18,9 +18,8 @@ export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
 export const BG_IMG =
   "https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
-
-  //This is from new email address and new phone number , created on 28 Oct 2023, valid for next 3 months only
-export const OPENAI_KEY = "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";
+//This is from new email address and new phone number , created on 28 Oct 2023, valid for next 3 months only
+export const OPENAI_KEY = "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";
 
 //this is from dhananjaywaghade06@gmail.com
 // export const OPENAI_KEY= "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";
