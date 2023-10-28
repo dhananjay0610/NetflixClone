@@ -1,10 +1,13 @@
 import React, { useRef } from "react";
 import openai from "../utils/openai";
 import { API_OPTIONS } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import addGptMovieResult, { addGptMovieNames } from "../utils/gptSlice";
 
 const GPTSearchBar = () => {
   const searchText = useRef(null);
 
+  const dispatch = useDispatch();
   const searchMovieInTMDB = async (gptMovies) => {
     const data = await fetch(
       "https://api.themoviedb.org/3/search/movie" +
@@ -26,10 +29,16 @@ const GPTSearchBar = () => {
       model: "gpt-3.5-turbo",
     });
     const gptMovies = gptResults.choices?.[0]?.message?.content.split(",");
-    console.log(gptMovies);
+    //console.log(gptMovies);
 
     //for each movies I will search tmdb api
-    const data = gptMovies.map((m) => searchMovieInTMDB(m));
+    const promiseArray = gptMovies.map((m) => searchMovieInTMDB(m));
+    const tmdbResults = Promise.all(promiseArray);
+    console.log(tmdbResults);
+    dispatch(
+      addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults })
+    );
+    //dispatch(addGptMovieNames(gptMovies))
   };
   return (
     <div className="pt-[13%] flex justify-center">
