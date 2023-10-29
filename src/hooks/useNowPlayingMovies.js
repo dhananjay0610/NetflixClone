@@ -8,7 +8,8 @@ const useNowPlayingMovies = () => {
 
   const nowPlayingMovies = useSelector(
     (store) => store.movies.nowPlayingMovies
-  );
+  
+    );
 
   const getNowPlayingMovie = async () => {
     const data = await fetch(

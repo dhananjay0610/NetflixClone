@@ -54,9 +54,17 @@ Welcome to our Netflix clone project! This application replicates the popular st
         TMDB image CDN url
         made the Browse page looks better
         useTopRatedMovies custom hook
-
         GPT Search Feature
         Integrate GPT APIs
-
+        Get GPT Search OpenAI API key
+        GPT Search API Call
+        fetched gpt movie suggestions from tmdb
+        created gpt slice and added data there
+        reused movieList component to make movie suggestions container
+        Memoization
+        adding .env file
+        adding .env file to .gitignore
+        made site responsive
+        
          -->
 
