@@ -19,7 +19,11 @@ export const BG_IMG =
   "https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
 //This is from new email address and new phone number , created on 28 Oct 2023, valid for next 3 months only
-export const OPENAI_KEY = "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";
+export const OPENAI_KEY = "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";
 
 //this is from dhananjaywaghade06@gmail.com
 // export const OPENAI_KEY= "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";
+
+
+//     Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
+// export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
